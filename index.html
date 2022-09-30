@@ -15,6 +15,10 @@
       rel="stylesheet"
     />
 
+    <!-- ===== AOS JS=====-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
     <!--===== FAVICON =====-->
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
@@ -57,13 +61,13 @@
       <section class="hero" id="hero">
         <div class="hero-container">
           <div class="hero-content">
-            <h3>Superior Technology At Your Doorstep</h3>
-            <p>
+            <h3 data-aos="fade-up">Superior Technology At Your Doorstep</h3>
+            <p data-aos="fade-up" data-aos-delay="300">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe
               explicabo assumenda dolore enim iste.
             </p>
 
-            <button>Contact Us</button>
+            <button data-aos="fade-up" data-aos-delay="400">Contact Us</button>
           </div>
           <div class="hero-img">
             <img src="img/hero-1.jpg" alt="" />
@@ -80,16 +84,16 @@
           </div>
 
           <div class="about-content">
-            <span>About Us?</span>
-            <h3>Nunc maximus, nulla ut commodo sagittis</h3>
-            <p>
+            <span data-aos="fade-left">About Us?</span>
+            <h3 data-aos="fade-up">Nunc maximus, nulla ut commodo sagittis</h3>
+            <p data-aos="fade-up" data-aos-delay="300">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo,
               consequatur quidem! Inventore quaerat, eligendi libero atque
               recusandae numquam officia expedita! Tempora ipsum facilis placeat
               expedita.
             </p>
 
-            <p>
+            <p data-aos="fade-up" data-aos-delay="400">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui
               tempore earum autem nulla atque tenetur minus iste quia impedit
               fugit recusandae, nisi nesciunt esse odio!
@@ -102,11 +106,13 @@
       <section class="services">
         <div class="services-container">
           <div class="services-content">
-            <span class="sc-span">Our Services</span>
-            <h3>Nunc maximus, nulla ut commodo sagittis</h3>
+            <span class="sc-span" data-aos="fade-left">Our Services</span>
+            <h3 data-aos="fade-left" data-aos-delay="300">
+              Nunc maximus, nulla ut commodo sagittis
+            </h3>
 
             <div class="sc-cards">
-              <div class="sc-c">
+              <div class="sc-c" data-aos="fade-up">
                 <i class="bx bx-cycling"></i>
                 <p>
                   Lorem ipsum, dolor sit amet consectetur adipisicing elit.
@@ -114,7 +120,7 @@
                 </p>
               </div>
 
-              <div class="sc-c">
+              <div class="sc-c" data-aos="fade-up" data-aos-delay="450">
                 <i class="bx bx-cycling"></i>
                 <p>
                   Lorem ipsum, dolor sit amet consectetur adipisicing elit.
@@ -122,7 +128,7 @@
                 </p>
               </div>
 
-              <div class="sc-c">
+              <div class="sc-c" data-aos="fade-up" data-aos-delay="600">
                 <i class="bx bx-cycling"></i>
                 <p>
                   Lorem ipsum, dolor sit amet consectetur adipisicing elit.
@@ -130,7 +136,7 @@
                 </p>
               </div>
 
-              <div class="sc-c">
+              <div class="sc-c" data-aos="fade-up" data-aos-delay="750">
                 <i class="bx bx-cycling"></i>
                 <p>
                   Lorem ipsum, dolor sit amet consectetur adipisicing elit.
@@ -141,8 +147,13 @@
           </div>
 
           <div class="services-img">
-            <img src="img/ab-img-3.jpg" alt="" />
-            <img src="img/ab-img-1.jpg" alt="" />
+            <img src="img/ab-img-3.jpg" alt="" data-aos="fade-left" />
+            <img
+              src="img/ab-img-1.jpg"
+              alt=""
+              data-aos="fade-left"
+              data-aos-delay="300"
+            />
           </div>
         </div>
       </section>
@@ -151,11 +162,18 @@
       <section class="products" id="products">
         <div class="products-container">
           <div class="products-title">
-            <span class="product-span">Our Fleet</span>
-            <h3>Assumenda Molestias Quibusdam</h3>
+            <span class="product-span" data-aos="fade-up">Our Fleet</span>
+            <h3 data-aos="fade-up" data-aos-delay="300">
+              Assumenda Molestias Quibusdam
+            </h3>
           </div>
 
-          <div class="product-carousel" data-carousel>
+          <div
+            class="product-carousel"
+            data-carousel
+            data-aos="fade-up"
+            data-aos-delay="500"
+          >
             <div class="product-cards" data-slides>
               <div class="p-card" data-active>
                 <img src="img/product-1.jpg" alt="" />
@@ -195,13 +213,18 @@
       <section class="contact" id="contact">
         <div class="contact-container">
           <div class="contact-content">
-            <span class="cc-span">Contact Us</span>
-            <h3>Share it with us</h3>
-            <p>
+            <span class="cc-span" data-aos="fade-up">Contact Us</span>
+            <h3 data-aos="fade-up" data-aos-delay="300">Share it with us</h3>
+            <p data-aos="fade-up" data-aos-delay="450">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. In,
               dicta!
             </p>
-            <img src="img/cc-img-1.jpg" alt="" />
+            <img
+              src="img/cc-img-1.jpg"
+              alt=""
+              data-aos="fade-up"
+              data-aos-delay="500"
+            />
           </div>
 
           <div class="contact-form">
@@ -296,5 +319,12 @@
 
     <script src="index.js"></script>
     <script src="product.js"></script>
+    <script>
+      AOS.init({
+        duration: 1500,
+      });
+
+      window.addEventListener("load", AOS.refresh);
+    </script>
   </body>
 </html>
