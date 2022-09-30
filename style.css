@@ -296,6 +296,10 @@ nav {
   transition: all 0.3s ease;
 }
 
+.nav-menu__btn button a {
+  color: var(--white);
+}
+
 .nav-menu__btn button:hover {
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
@@ -407,6 +411,10 @@ main {
   cursor: pointer;
   transition: all 0.3s ease;
   margin-left: var(--mb-0-25);
+}
+
+.hero-content button a {
+  color: var(--white);
 }
 
 .hero-content button:hover {
